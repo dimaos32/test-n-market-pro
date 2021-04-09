@@ -3,7 +3,7 @@
 <head>
 
   @@include("source/html/base/head.html")
-  <title>ProjectName — Главная</title>
+  <title>Тестовое задание для Нмаркет.ПРО</title>
 
 </head>
 <body>
@@ -19,22 +19,31 @@
 
     <main>
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+        <section class="example">
+          <H1 class="visually-hidden">Тестовое задание для Нмаркет.ПРО</H1>
+
+          <ul class="example__btns">
+            <li>
+              <a href="#" class="btn btn--size-l btn--fix" data-modal="flat">Подробнее о квартире</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn--fix" data-modal="flat">Подробнее о квартире</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn--size-s btn--fix" data-modal="flat">Подробнее о квартире</a>
+            </li>
+          </ul>
+
+        </section>
       </div>
     </main>
 
     @@include("source/html/base/footer.html")
 
     @@include("source/html/base/modal.html", {
-      "name": "feedback"
-    })
-
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
+      "name": "flat"
     })
   </div>
 

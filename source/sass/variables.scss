@@ -1,18 +1,18 @@
 // Colors
-//---------------------------------
-// https://www.htmlcsscolor.com/hex/334482
 
-// Default
+$color-white:                     #ffffff;
 
-$color-default-black:             #000000;
-$color-default-white:             #ffffff;
-$color-transparent:               rgba(255, 255, 255, 0);
+$color-gray-040:                  #f5f4f2;
+$color-gray-100:                  #e7e4de;
+$color-gray-300:                  #b2b0ab;
+$color-gray-750:                  #383736;
 
-// Base
+$color-black:                     #000000;
 
-$color-black:                     #0e0e0e;
-$color-white:                     #f2f2f2;
-$color-blue:                      #2c39f2;
+
+$color-primary-500:               #fac62d;
+$color-primary-700:               #f0b505;
+$color-primary-800:               #e1ab08;
 
 // Gradient
 
@@ -21,7 +21,7 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // Typography
 //---------------------------------
 
-$font-family--:                     "", "Arial", sans-serif;
+$font-family--roboto:               "Roboto", "Arial", sans-serif;
 
 // Animation
 //---------------------------------
@@ -34,9 +34,8 @@ $modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
 
 $viewport--sm:                      320px;
 $viewport--md:                      768px;
-$viewport--lg:                      1024px;
+$viewport--lg:                      920px;
 $viewport--xl:                      1440px;
-$viewport--xxl:                     1920px;
 
 // Retina
 //---------------------------------

@@ -10,7 +10,7 @@
   flex-direction: column;
   overflow-y: auto;
 
-  background-color: rgba($color-default-black, 0.6);
+  background-color: rgba($color-black, 0.6);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -36,10 +36,10 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 40px 28px;
 
     @include viewport--sm {
-      padding: 60px 16px;
+      padding: 40px 8px;
     }
   }
 
@@ -57,10 +57,12 @@
   &__content {
     position: relative;
 
-    width: 600px;
-    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 24px;
 
-    background-color: $color-default-white;
+    background-color: $color-white;
+    border-radius: 8px;
 
     @include viewport--sm {
       width: 100%;
@@ -70,8 +72,33 @@
 
   &__close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    display: block;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+    color: $color-gray-300;
+    background-color: transparent;
+    border-radius: 4px;
+    outline: none;
+    transition:
+      color $default-transition-settings,
+      background-color $default-transition-settings;
+
+    svg {
+      display: block;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-gray-750;
+      background-color: $color-gray-040;
+    }
+
+    &:active {
+      background-color: $color-gray-100;
+    }
   }
 
   &--responsive {

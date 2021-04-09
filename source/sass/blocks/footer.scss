@@ -1,6 +1,8 @@
 .footer {
-  min-height: 100px;
-  padding: 0 60px;
+  padding: 24px 0;
+  background-color: $color-primary-500;
 
-  background-color: $color-blue;
+  p {
+    margin: 0;
+  }
 }
