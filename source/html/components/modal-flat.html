@@ -1,1 +1,83 @@
-<p class="modal__description">Обычная модалка</p>
+<div class="modal-flat">
+  <div class="modal-flat__wrapper">
+    <img class="modal-flat__scheme"
+        src="img/svg/flat.svg"
+        width="178"
+        height="178"
+        alt="План квартиры">
+
+    <div class="modal-flat__info">
+      <h2 class="modal-flat__title">2-к квартира</h2>
+
+      <dl class="modal-flat__details">
+        <div class="modal-flat__detail">
+          <dt>Этаж</dt>
+          <dd>3 из 19</dd>
+        </div>
+
+        <div class="modal-flat__detail">
+          <dt>Высота потолков</dt>
+          <dd>3,2 м</dd>
+        </div>
+
+        <div class="modal-flat__detail">
+          <dt>Отделка</dt>
+          <dd>Предчистовая</dd>
+        </div>
+
+        <div class="modal-flat__detail">
+          <dt>Общая площадь</dt>
+          <dd>32,24 м²</dd>
+        </div>
+
+        <div class="modal-flat__detail">
+          <dt>Жилая площадь</dt>
+          <dd>22,24 м²</dd>
+        </div>
+
+        <div class="modal-flat__detail">
+          <dt>Площадь кухни</dt>
+          <dd>14,24 м²</dd>
+        </div>
+      </dl>
+
+      <ul class="modal-flat__tags">
+        <li class="modal-flat__tag modal-flat__tag--positive">
+          <svg width="16" height="16">
+            <use xlink:href="#icon-positive"></use>
+          </svg>
+
+          Вы были на просмотре
+        </li>
+
+        <li class="modal-flat__tag modal-flat__tag--negative">
+          <svg width="16" height="16">
+            <use xlink:href="#icon-negative"></use>
+          </svg>
+
+          Дом аккредитован другим банком
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal-flat__offer">
+    <p>
+      Ваша цена по брони до <time datetime="2021-09-19">19 сентября</time>
+    </p>
+
+    <p class="modal-flat__price">3 312 666 Р</p>
+
+    <p>Текущая цена у застройщика</p>
+
+    <p>дороже на <span class="modal-flat__discount">324 825 Р</span></p>
+
+    <button class="btn btn--size-l modal-flat__offer-btn">
+      <svg width="16" height="16">
+        <use xlink:href="#icon-key"></use>
+      </svg>
+
+      Выбрать для покупки
+    </button>
+  </div>
+</div>
